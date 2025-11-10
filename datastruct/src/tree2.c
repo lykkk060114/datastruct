@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include <malloc.h>
 #define MaxSize 100
+/**
+ * @brief 二叉树的遍历
+ * @author lyk 20251110
+ *
+ */
 typedef char ElemType;
 typedef struct tnode
 {

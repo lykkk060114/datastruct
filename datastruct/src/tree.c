@@ -1,7 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #define MaxSize 100
-
+/**
+ * @brief
+ * @author lyk 20251110
+ */
 typedef char ElemType;
 
 typedef struct tnode
@@ -126,10 +129,14 @@ void DispBTree(BTNode *bt)
         }
     }
 }
-
+/**
+ * @brief main
+ *
+ * @return int
+ */
 int main()
 {
-    BTNode *bt;
+    BTNode *bt; // 创建结构体指针
     CreateBTree(&bt, "A(B(D,E(G,H)),C(,F(I)))");
     printf("二叉树bt:");
     DispBTree(bt);
