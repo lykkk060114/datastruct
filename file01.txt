@@ -1,7 +1,0 @@
-
-#include <iostream>
-int main(){
-std::string hi = "hello_world";
-std::cout << hi <<endl;
-return 0;
-

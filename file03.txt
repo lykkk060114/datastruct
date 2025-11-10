@@ -1,7 +1,0 @@
-
-#include <iostream>
-int main(int argc, char **argv){
-ROS_INFO("ok");
-return 0;
-}
-
