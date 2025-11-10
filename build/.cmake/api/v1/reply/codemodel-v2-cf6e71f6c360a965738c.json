@@ -1,0 +1,86 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "test",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LinkList::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LinkList-Debug-018e7988ea3391dec9fe.json",
+					"name" : "LinkList",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "sqlist::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-sqlist-Debug-094bc83ace375b7f7564.json",
+					"name" : "sqlist",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tree::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tree-Debug-244658533dd8741d52ba.json",
+					"name" : "tree",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tree2::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tree2-Debug-ea39b82982ee0c3ec3cb.json",
+					"name" : "tree2",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/lyk/git_demo/datastruct/build",
+		"source" : "/home/lyk/git_demo/datastruct"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

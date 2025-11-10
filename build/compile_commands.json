@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/lyk/git_demo/datastruct/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu11 -o CMakeFiles/LinkList.dir/src/LinkList.c.o   -c /home/lyk/git_demo/datastruct/src/LinkList.c",
+  "file": "/home/lyk/git_demo/datastruct/src/LinkList.c"
+},
+{
+  "directory": "/home/lyk/git_demo/datastruct/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu11 -o CMakeFiles/tree2.dir/src/tree2.c.o   -c /home/lyk/git_demo/datastruct/src/tree2.c",
+  "file": "/home/lyk/git_demo/datastruct/src/tree2.c"
+},
+{
+  "directory": "/home/lyk/git_demo/datastruct/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu11 -o CMakeFiles/tree.dir/src/tree.c.o   -c /home/lyk/git_demo/datastruct/src/tree.c",
+  "file": "/home/lyk/git_demo/datastruct/src/tree.c"
+},
+{
+  "directory": "/home/lyk/git_demo/datastruct/build",
+  "command": "/usr/bin/gcc   -g   -std=gnu11 -o CMakeFiles/sqlist.dir/src/sqlist.c.o   -c /home/lyk/git_demo/datastruct/src/sqlist.c",
+  "file": "/home/lyk/git_demo/datastruct/src/sqlist.c"
+}
+]
