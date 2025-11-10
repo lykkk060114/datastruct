@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(test LANGUAGES C)
+set(CMAKE_C_STANDARD 11)
+set(CMAKE_C_STANDARD_REQUIRED ON)
+project(test)
+add_executable(test src/test.c)
+add_executable(tree src/tree.c)
+add_executable(tree2 src/tree2.c)

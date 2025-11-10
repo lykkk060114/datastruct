@@ -1,0 +1,5 @@
+/home/lyk/datastruct/build/CMakeFiles/rebuild_cache.dir
+/home/lyk/datastruct/build/CMakeFiles/tree2.dir
+/home/lyk/datastruct/build/CMakeFiles/edit_cache.dir
+/home/lyk/datastruct/build/CMakeFiles/tree.dir
+/home/lyk/datastruct/build/CMakeFiles/test.dir
