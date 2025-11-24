@@ -1,16 +1,27 @@
 #include <stdio.h>
 #include <stdlib.h>
-typedef char ElemType;
+typedef char ElemType;  
 typedef struct LNode
 {
     ElemType data;
-    struct LNode *next;
-} LinkNode;
+    struct LNode *next; 
+} LinkNode; //64位对齐以后16字节
+
+/**
+ * @brief 初始化一个节点罢了
+ * @details 如果单层指针 就是把结构体指针给复制进去了，然后这个一切都是对复制的指针进行，并非这个指针本身，只有把这个指针的地址传进去才准确
+ * @param L 
+ */
 void InitList(LinkNode **L)
 {
     (*L) = (LinkNode *)malloc(sizeof(LinkNode));
     (*L)->next = NULL;
 }
+/**
+ * @brief 
+ * 
+ * @param L 
+ */
 void DestoryList(LinkNode **L)
 {
     LinkNode *pre = *L, *p = pre->next;
