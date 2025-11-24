@@ -1,1 +1,0 @@
-/usr/bin/gcc -g   CMakeFiles/tree2.dir/src/tree2.c.o  -o tree2 

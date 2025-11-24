@@ -1,1 +1,0 @@
-/usr/bin/gcc -g   CMakeFiles/sqlist.dir/src/sqlist.c.o  -o sqlist 

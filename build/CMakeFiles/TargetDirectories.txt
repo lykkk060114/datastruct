@@ -1,6 +1,0 @@
-/home/lyk/git_demo/datastruct/build/CMakeFiles/rebuild_cache.dir
-/home/lyk/git_demo/datastruct/build/CMakeFiles/LinkList.dir
-/home/lyk/git_demo/datastruct/build/CMakeFiles/tree2.dir
-/home/lyk/git_demo/datastruct/build/CMakeFiles/edit_cache.dir
-/home/lyk/git_demo/datastruct/build/CMakeFiles/tree.dir
-/home/lyk/git_demo/datastruct/build/CMakeFiles/sqlist.dir
