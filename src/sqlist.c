@@ -49,7 +49,7 @@ int GetElem(SqList *L, int i, ElemType *e)
 int LocateElem(SqList *L, ElemType e)
 {
     int i = 0;
-    while (i > L->length && L->data[i] != e)
+    while (i < L->length && L->data[i] != e)
         i++;
     if (i > L->length)
         return 0;

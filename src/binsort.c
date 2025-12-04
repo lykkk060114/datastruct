@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #define MaxSize 100
 typedef int KeyType;
 typedef char ElemType;
@@ -31,7 +32,7 @@ void Merge(SqType R[],int low,int mid ,int high){
         j++;k++;
         /* code */
     }
-    for(k=0;i=low;i<=high;k++,i++)
+    for(k=0,i=low;i<=high;k++,i++)
     {
         R[i]=R1[k];
         

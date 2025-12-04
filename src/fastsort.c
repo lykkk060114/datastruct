@@ -28,10 +28,10 @@ void QuickSort(SqType R[],int s, int t)
         tmp=R[s];
         while (i!=j)
         {
-            while (j>i && R[j].key>tmp.key)
+            while (j>i && R[j].key>=tmp.key)
                 j--;
             R[i]=R[j];
-            while (i<j && R[i].key<tmp.key)
+            while (i<j && R[i].key<=tmp.key)
                 i++;
             R[j]=R[i];
         }

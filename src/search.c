@@ -28,10 +28,10 @@ int BinSearch(Rectype R[],int n, KeyType k)
             return mid+1;
         if(R[mid].key>k)
             high=mid-1;
-        else    
-            low=mid+1;   /* code */
+        else
+            low=mid+1;
     }
-    return 0;
+    return -1;
 }
 // int BinSearch(Rectype R[], KeyType k, int low, int high)
 // {

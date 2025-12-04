@@ -163,7 +163,7 @@ int main()
     printf("(5)单链表h为：%s\n", (ListEmpty(h) ? "空" : "非空"));
     GetElem(h, 3, &e);
     printf("(6)单链表h的第三个元素：%c\n", e);
-    printf("(7)元素a的位置：%d\n,LocateElem(h,'a')");
+    printf("(7)元素a的位置：%d\n", LocateElem(h, 'a'));
     printf("(8)在第4个元素位置上插入元素f\n");
     ListInsert(h, 4, 'f');
     printf("(9)输出单链表h:");
