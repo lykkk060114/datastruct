@@ -5,8 +5,13 @@ typedef struct LNode
 {
     ElemType data;
     struct LNode *next; 
-} LinkNode; //64位对齐以后16字节
-
+} LinkNode; //64位对齐以后16字节 
+/**认真体会了C++和C结构体的不一样
+认真体会结构体才发现面向对象的思想从结构体就能体会的淋漓尽致
+一个链表是不能在一开始就规划内存大小的，不过说到 vector,
+倒是也可以从顺序表知道他的问题所在，感觉还是知识浅薄，stl容器仅仅知道一个接口还是远远不够的
+过段时间会去尝试用容器来完成数据结构，可能又会有其他感受了
+/
 /**
  * @brief 初始化一个节点罢了
  * @details 如果单层指针 就是把结构体指针给复制进去了，然后这个一切都是对复制的指针进行，并非这个指针本身，只有把这个指针的地址传进去才准确
@@ -14,8 +19,8 @@ typedef struct LNode
  */
 void InitList(LinkNode **L)
 {
-    (*L) = (LinkNode *)malloc(sizeof(LinkNode));
-    (*L)->next = NULL;
+    (*L) = (LinkNode *)malloc(sizeof(LinkNode));    //先创建一个指针实例（分配空间）
+    (*L)->next = NULL;      //再防止指针悬空
 }
 /**
  * @brief 
@@ -24,20 +29,20 @@ void InitList(LinkNode **L)
  */
 void DestoryList(LinkNode **L)
 {
-    LinkNode *pre = *L, *p = pre->next;
+    LinkNode *pre = *L, *p = pre->next; //两个并排指针 一个是头指针的拷贝，一个是下一个指针的拷贝 只能慢慢理解，没想到怎么解释
     while (p != NULL)
     {
-        free(pre);
-        pre = p;
-        p = pre->next;
+        free(pre);      
+        pre = p;    
+        p = pre->next;      
     }
     free(pre);
 }
-int ListEmpty(LinkNode *L)
+int ListEmpty(LinkNode *L)      
 {
     return (L->next == NULL);
 }
-int ListLength(LinkNode *L)
+int ListLength(LinkNode *L)  
 {
     int i = 0;
     LinkNode *p = L;
@@ -145,7 +150,7 @@ int ListDelete(LinkNode *L, int i, ElemType *e)
 }
 int main()
 {
-    LinkNode *h;
+    LinkNode *h; //其实一个带头节点也不错，但是一个无头指针更像是这个结构
     ElemType e;
     printf("单链表的基本运算：\n");
     printf("(1)初始化单链表h\n");
