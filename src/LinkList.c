@@ -20,7 +20,7 @@ typedef struct LNode
 void InitList(LinkNode **L)
 {
     (*L) = (LinkNode *)malloc(sizeof(LinkNode));    //先创建一个指针实例（分配空间）
-    (*L)->next = NULL;      //再防止指针悬空
+    (*L)->next = NULL;      //再防止指针悬空 堆上的指针
 }
 /**
  * @brief 
@@ -37,6 +37,7 @@ void DestoryList(LinkNode **L)
         p = pre->next;      
     }
     free(pre);
+    *L = NULL;  //靠，差点悬空指针了
 }
 int ListEmpty(LinkNode *L)      
 {
@@ -109,7 +110,7 @@ int ListInsert(LinkNode *L, int i, ElemType e)
         j++;
         p = p->next;
     }
-    if (p == NULL)
+    if (p == NULL)  //有一点绕
     {
         return 0;
     }
@@ -164,7 +165,6 @@ int main()
     printf("(3)输出单链表h:");
     DispList(h);
     printf("(4)单链表长度：%d\n", ListLength(h));
-    // 修正后的代码 - 使用英文引号
     printf("(5)单链表h为：%s\n", (ListEmpty(h) ? "空" : "非空"));
     GetElem(h, 3, &e);
     printf("(6)单链表h的第三个元素：%c\n", e);
