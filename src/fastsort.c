@@ -1,7 +1,7 @@
 /**
  * @file fastsort.c
- * @author your name (you@domain.com)
- * @brief 快速排序算法 
+ * @author Lyk
+ * @brief 快速排序算法
  * @version 0.1
  * @date 2025-12-01
  * 

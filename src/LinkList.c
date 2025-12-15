@@ -1,11 +1,11 @@
 #include <stdio.h>
 #include <stdlib.h>
-typedef char ElemType;  
+typedef char ElemType;
 typedef struct LNode
 {
     ElemType data;
-    struct LNode *next; 
-} LinkNode; //64位对齐以后16字节 
+    struct LNode *next;
+} LinkNode; //64位对齐以后16字节
 /**认真体会了C++和C结构体的不一样
 认真体会结构体才发现面向对象的思想从结构体就能体会的淋漓尽致
 一个链表是不能在一开始就规划内存大小的，不过说到 vector,

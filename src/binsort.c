@@ -22,7 +22,7 @@ void Merge(SqType R[],int low,int mid ,int high){
         j++,k++;
       }  
     }
-    while (i<=mid) 
+    while (i<=mid)
     {   R1[k]=R[i];
         i++,k++;
         /* code */

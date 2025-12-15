@@ -7,3 +7,8 @@ add_executable(sqlist src/sqlist.c)
 add_executable(tree src/tree.c)
 add_executable(tree2 src/tree2.c)
 add_executable(LinkList src/LinkList.c)
+add_executable(search src/search.c)
+add_executable(select_sort src/select_sort.c)
+add_executable(binsort src/binsort.c)
+add_executable(fastsort src/fastsort.c)
+
